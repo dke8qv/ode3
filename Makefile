@@ -8,8 +8,8 @@ endif
 #ROOTLIBS   = $(shell root-config --libs)
 #ROOTGLIBS  = $(shell root-config --glibs)
 #ROOTFLAGS   = $(ROOTCFLAGS) $(ROOTLIBS) $(ROOTGLIBS) 
-#CXXFLAGS  += $(ROOTCFLAGS) -I$(P56xxLIBS)/inc -Wall -O3
-#LDFLAGS    = $(ROOTLIBS) $(ROOTGLIBS) -Wl,-rpath,$(P56xxLIBS)/lib -L$(P56xxLIBS)/lib -lP56xx
+#CXXFLAGS  += $(ROOTCFLAGS) -I$(P56xxLIBS) -Wall -O3
+#LDFLAGS    = $(ROOTLIBS) $(ROOTGLIBS) -Wl,-rpath,$(P56xxLIBS) -L$(P56xxLIBS) -lP56xx
 #GXX	   = g++ $(CXXFLAGS)
 
 #SRCS = $(wildcard *.cpp)
