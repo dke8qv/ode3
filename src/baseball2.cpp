@@ -1,9 +1,5 @@
 ///
-/// Starter templated for second baseball problem
-/// Solve for the initial speed of the pitch given the initial parameters
-/// xend : distance to home plate [18.5] m
-/// z0 : height of release of ball [1.4] m
-/// theta0 : angle of release above horizontal [1] degree
+/// Starter template for second baseball problem
 ///
 ///  Do not change the interface for running the program
 ///  Fill in the value of vPitch in the print statement with your solution
@@ -35,7 +31,7 @@ int main(int argc, char **argv){
   // y[5] = v0*sin(theta0);   // vz  "z" is vertival measure
   vector<double> y0(6);
 
-  bool showPlot=true;    // keep this flag true by default
+  bool showPlot=false;
   // pitches
   // slider ip=0
   // curve ip=1

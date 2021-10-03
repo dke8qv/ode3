@@ -1,5 +1,5 @@
 ///
-/// Starter templated for first baseball problem
+/// Starter template for first baseball problem
 /// Solve for the initial speed of the pitch given the initial parameters
 /// xend : distance to home plate [18.5] m
 /// z0 : height of release of ball [1.4] m
@@ -45,9 +45,9 @@ int main(int argc, char **argv){
   void *p_par = (void*) &pars;
 
   double xend=18.5;       // meters to plate
-  double z0=1.4;          // height of release [m]
-  double theta0=1;        // angle of velocity at release (degrees)
-                          // convert to radians before using!
+  double z0=1.4;             // height of release [m]
+  double theta0=1;         // angle of velocity at release (degrees)
+                                      // convert to radians before using!
   bool showPlot=false;    // keep this flag false by default
   
   // allow changing the parameters from the command line
