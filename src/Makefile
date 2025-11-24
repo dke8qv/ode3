@@ -13,7 +13,7 @@ GSLFLAGS   = -lgsl -lgslcblas
 GXX	   = g++ $(CXXFLAGS)
 
 
-EXES=baseball1 baseball2 RKnDemo RKnStep RKnTest projGSL
+EXES=baseball1 baseball2 RKnDemo RKnStep RKnTest projGSL vterm vterm_mass
 
 
 all: $(EXES)
@@ -35,6 +35,18 @@ baseball2: baseball2.cpp $(ODELIB)/RKn.hpp
 
 projGSL: projGSL.cpp
 	$(GXX) $(CXXFLAGS) -o$@ $@.cpp $(LDFLAGS) $(GSLFLAGS)
+	
+
+vterm: vterm.cpp ../odelib/libode.a
+	$(CXX) $(CXXFLAGS) -o vterm vterm.cpp ../odelib/libode.a `root-config --cflags --libs --glibs`
+
+vterm_mass: vterm_mass.cpp ../odelib/libode.a
+	$(CXX) $(CXXFLAGS) -o vterm_mass vterm_mass.cpp ../odelib/libode.a `root-config --cflags --libs --glibs`
+
+
+
+
+
 
 
 clean:
