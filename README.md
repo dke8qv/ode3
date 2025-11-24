@@ -1,3 +1,16 @@
+Team member names and computing IDs: Harshana(dke8qv) Lenakshi(ktn9mu)
+
+------------------------------------------------------------------------------------------------
+********Part B - Problem 1***********************************
+
+(xend,z0,theta0) = (18.500000,1.400000,1.000000)
+v_pitch = 48.045304 m/s
+------------------------------------------------------------------------------------------------
+
+
+
+
+
 # ode3
 
 physx630 odelib
@@ -50,3 +63,5 @@ Two examples are given for using ODE solvers from the scipy.integrate sub-packag
     Solution (projScPY.py[ipynb]) using an older interface scipy.integrate.odeint¶ (see comments here: https://docs.scipy.org/doc/scipy/reference/integrate.html).  I do not recommend using this interface any longer.
 
 The notebook versions contain additional comments on using the integrators.
+
+
